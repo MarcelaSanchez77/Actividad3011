@@ -146,17 +146,257 @@
     background-color: var(--Color__Primario);
     
   }
-  
-    
+      
   .header__formulario h4 {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--Color__Primario);
   }
   
-  
+ /*<!--Servicios-->*/
 
+
+  .servicio__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
   
+  .servicio__header__content p {
+    max-width: 600px;
+    color: var(--Color__Texto__Clarito);
+  }
+  
+  .servicio__btn {
+    padding: 0.75rem 1rem;
+    outline: none;
+    font-size: 1rem;
+    color: var(--Color__Primario);
+    border: 1px solid var(--Color__Primario);
+    background-color: transparent;
+    border-radius: 5px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .servicio__btn:hover {
+    color: var(--white);
+    background-color: var(--primary-color);
+  }
+  
+  .servicio__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .servicio__card {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .servicio__card span {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    color: var(--Color__Primario);
+    background-color: var(--Color__Primario__Clarito);
+    border-radius: 100%;
+    transition: 0.3s;
+  }
+  
+  .servicio__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--Color__Texto__Oscuro);
+  }
+  
+  .servicio__card p {
+    margin-bottom: 1rem;
+    color: var(--Color__Texto__Clarito);
+  }
+  
+  .servicio__card a {
+    color: var(--Color__Primario);
+  }
+  
+  .servicio__card a:hover {
+    color: var(--Color__Primario__Oscuro);
+  }
+  
+  .service__card:hover span {
+    color: var(--Color__Primario__Clarito);
+    background-color: var(--Color__Primario);
+  }
+  
+   /*<!--About Us->*/
+
+
+   .about__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .about__content p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+  }
+  
+  .about__image img {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+/*<!--Blog->*/
+
+  .blog__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .blog__image img {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+  .blog__content p {
+    color: var(--text-light);
+  }
+  
+  .blog__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 80px auto;
+    gap: 2rem;
+  }
+  
+  .blog__grid span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--Color__Primario);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog__grid h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--Color__Texto__Oscuro);
+  }
+  
+  .blog__grid p {
+    color: var(--Color__Texto__Clarito);
+  }
+  
+  
+  /*<!--Pages-->*/
+
+  .doctores__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .doctores__header__content p {
+    max-width: 600px;
+    color: var(--Color__Texto__Clarito);
+  }
+  
+  .doctores__nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .doctores__nav span {
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    color: var(--Color__Primario);
+    background-color: var(--Color__Primario__Clarito);
+    cursor: pointer;
+  }
+  
+  .doctores__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .doctores__card {
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .doctores__card__image {
+    position: relative;
+   
+    
+  }
+  
+  .doctores__redes {
+    position: absolute;
+    left: 0;
+    bottom: -4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: 0.5s;
+  }
+  
+  .doctores__redes span {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 1.5rem;
+    color: var(--Color__Texto__Oscuro);
+    background-color: var(--Color__Blanco);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .doctores__redes span:hover {
+    color: var(--Color__Primario);
+  }
+  
+  .doctores__card:hover .doctores__redes {
+    bottom: 2rem;
+  }
+  
+  .doctores__card h4 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--Color__Texto__Oscuro);
+  }
+  
+  .doctores__card p {
+    margin-bottom: 1rem;
+    color: var(--Color__Texto__Clarito);
+  }
   
 
   
