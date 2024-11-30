@@ -17,6 +17,10 @@
   --Ancho_Maximo: 1200px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Parametros de secciones que se repiten(generales)*/
 
 .section__container {
@@ -26,7 +30,7 @@
 }
 
 .btn {
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 3rem;
   border: none;
   font-size: 1rem;
   white-space: nowrap;
@@ -254,7 +258,7 @@ a {
 
 .about__content p {
   margin-bottom: 1rem;
-  color: var(--text-light);
+  color: var(--Color__Texto__Clarito);
 }
 
 .about__image img {
@@ -284,8 +288,8 @@ a {
   border-radius: 10px;
 }
 
-.blog__content p {
-  color: var(--text-light);
+.section__header p {
+  color: var(--Color__Texto__Clarito);
 }
 
 .blog__grid {
@@ -303,6 +307,9 @@ a {
   color: var(--Color__Primario);
   border-radius: 10px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.blog__grid span:hover {
+  color: var(--Color__Primario__Oscuro);
 }
 
 .blog__grid h4 {
@@ -324,10 +331,27 @@ a {
   justify-content: space-between;
   gap: 2rem;
 }
+.doctores__header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .doctores__header__content p {
   max-width: 600px;
   color: var(--Color__Texto__Clarito);
+}
+.flechitas {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.flechitas span {
+  font-size: 20px;
+  padding: 8px 16px;
+  color: var(--Color__Primario);
+  background-color: var(--Color__Primario__Clarito);
+  cursor: pointer;
 }
 
 .doctores__nav {
