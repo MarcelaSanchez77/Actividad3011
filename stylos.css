@@ -131,7 +131,8 @@ a {
 .header__formulario {
   width: 100%;
   max-width: 350px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   padding: 3rem;
   background-color: var(--Color__Blanco);
@@ -196,10 +197,9 @@ a {
   background-color: var(--primary-color);
 }
 
-.servicio__grid {
+.servicio__cuadricula {
   margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 2rem;
 }
 
@@ -220,6 +220,9 @@ a {
   background-color: var(--Color__Primario__Clarito);
   border-radius: 100%;
   transition: 0.3s;
+}
+.servicio__card:hover {
+  color: var(--Color__Primario__Oscuro);
 }
 
 .servicio__card h4 {
@@ -242,7 +245,7 @@ a {
   color: var(--Color__Primario__Oscuro);
 }
 
-.service__card:hover span {
+.servicio__card:hover span {
   color: var(--Color__Primario__Clarito);
   background-color: var(--Color__Primario);
 }
@@ -250,15 +253,16 @@ a {
 /*<!--About Us->*/
 
 .about__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   gap: 2rem;
   align-items: center;
+  justify-content: space-between;
 }
 
 .about__content p {
   margin-bottom: 1rem;
   color: var(--Color__Texto__Clarito);
+  max-width: 600px;
 }
 
 .about__image img {
@@ -276,30 +280,44 @@ a {
 /*<!--Blog->*/
 
 .blog__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  display: flex;
+  gap: 1rem;
   align-items: center;
+  justify-content: space-between;
+}
+
+.blog {
+  max-width: 600px;
 }
 
 .blog__image img {
-  max-width: 400px;
   margin: auto;
   border-radius: 10px;
 }
 
-.section__header p {
-  color: var(--Color__Texto__Clarito);
-}
-
-.blog__grid {
+.blog__cuadricula {
   margin-top: 4rem;
-  display: grid;
-  grid-template-columns: 80px auto;
+  display: flex;
   gap: 2rem;
+  flex-direction: column;
 }
 
-.blog__grid span {
+.rectangulo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.laprofecheche {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.laprofecheche span {
+  width: 115px;
+}
+
+.blog__cuadricula span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -308,18 +326,18 @@ a {
   border-radius: 10px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
-.blog__grid span:hover {
+.blog__cuadricula span:hover {
   color: var(--Color__Primario__Oscuro);
 }
 
-.blog__grid h4 {
+.blog__cuadricula h4 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--Color__Texto__Oscuro);
 }
 
-.blog__grid p {
+.blog__cuadricula p {
   color: var(--Color__Texto__Clarito);
 }
 
@@ -346,6 +364,7 @@ a {
   align-items: center;
   gap: 15px;
 }
+
 .flechitas span {
   font-size: 20px;
   padding: 8px 16px;
@@ -368,10 +387,9 @@ a {
   cursor: pointer;
 }
 
-.doctores__grid {
+.doctores__cuadricula {
   margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 2rem;
 }
 
@@ -442,9 +460,13 @@ a {
 }
 
 .piePagina__container {
-  display: grid;
-  grid-template-columns: 400px repeat(3, 1fr);
+  display: flex;
   gap: 2rem;
+  justify-content: space-between;
+}
+
+.piePagina__HC {
+  max-width: 300px;
 }
 
 .piePagina__HC h3 {
@@ -473,7 +495,7 @@ a {
 }
 
 .piePagina__HC p:hover {
-  color: var(--Color__Primario);
+  color: var(--Color__Primario__Oscuro);
 }
 
 .piePagina__HC i {
