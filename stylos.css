@@ -258,6 +258,13 @@
     border-radius: 10px;
   }
   
+ .blog_image img{
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
+ }
+  
+
 /*<!--Blog->*/
 
   .blog__container {
@@ -347,13 +354,15 @@
     border-radius: 10px;
     cursor: pointer;
     overflow: hidden;
+   
   }
   
   .doctores__card__image {
     position: relative;
-   
-    
-  }
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+   }
   
   .doctores__redes {
     position: absolute;
@@ -365,6 +374,8 @@
     justify-content: center;
     gap: 1rem;
     transition: 0.5s;
+   
+
   }
   
   .doctores__redes span {
@@ -376,14 +387,19 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    
   }
-  
+
+  .span-social{
+    transform: translateY(-10px);
+  }
   .doctores__redes span:hover {
     color: var(--Color__Primario);
   }
   
   .doctores__card:hover .doctores__redes {
     bottom: 2rem;
+    
   }
   
   .doctores__card h4 {
@@ -398,5 +414,76 @@
     color: var(--Color__Texto__Clarito);
   }
   
+   /*<!--Pie de página-->*/
 
+   .piePagina {
+    background-color: var(--Color__Primario__Clarito);
+  }
+  
+  .piePagina__container {
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .piePagina__HC h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--Color__Primario);
+  }
+  
+  .piePagina__HC h3 span {
+    color: var(--Color__Secundario);
+  }
+  
+  .piePagina__HC h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--Color__Primario);
+  }
+  
+  .piePagina__HC p {
+    margin-bottom: 1rem;
+    color: var(--Color__Texto__Oscuro);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .piePagina__HC p:hover {
+    color: var(--Color__Primario);
+  }
+  
+  .piePagina__HC i {
+    color: var(--Color__Primario);
+  }
+  
+  .piePagina__barra {
+    background-color: var(--Color__Primario);
+  }
+  
+  .piePagina__barra__content {
+    max-width: var(--Ancho_Maximo);
+    margin: auto;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .piePagina__barra__content p {
+    font-size: 0.8rem;
+    color: var(--Color__Blanco);
+  }
+  
+  .piePagina__redes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    color: var(--Color__Blanco);
+    cursor: pointer;
+  }
   
